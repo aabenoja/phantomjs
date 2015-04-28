@@ -41,7 +41,7 @@ process.on('exit', function () {
 process.env.PATH = helper.cleanPath(originalPath)
 
 var libPath = path.join(__dirname, 'lib')
-var pkgPath = path.join(libPath, 'phantom')
+var pkgPath = path.join(libPath, 'phantom', 'bin')
 var phantomPath = null
 var tmpPath = null
 
@@ -136,7 +136,7 @@ whichDeferred.promise
   })
   .then(function () {
     var location = process.platform === 'win32' ?
-        path.join(pkgPath, 'phantomjs.exe') :
+        path.join(pkgPath, 'bin', 'phantomjs.exe') :
         path.join(pkgPath, 'bin' ,'phantomjs')
     var relativeLocation = path.relative(libPath, location)
     writeLocationFile(relativeLocation)
