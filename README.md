@@ -1,7 +1,7 @@
 phantomjs
 =========
 
-An NPM wrapper for [PhantomJS](http://phantomjs.org/), headless webkit with JS API.
+This is a fork of the NPM wrapper for [PhantomJS](http://phantomjs.org/), headless webkit with JS API to pull down the v2.0.0 binaries from the cdn.
 
 [![Build Status](https://travis-ci.org/Medium/phantomjs.svg?branch=master)](https://travis-ci.org/Medium/phantomjs)
 
